@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bibekkumar — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise"></div>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo"><svg class="footer-brand-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="8" cy="8" r="3" fill="#00e5cc"/>
+          <circle cx="32" cy="8" r="3" fill="#00e5cc"/>
+          <circle cx="8" cy="32" r="3" fill="#00e5cc"/>
+          <circle cx="32" cy="32" r="3" fill="#00e5cc"/>
+          <circle cx="20" cy="20" r="3" fill="#00e5cc"/>
+          <line x1="8" y1="8" x2="20" y2="20" stroke="#00e5cc" stroke-width="1.5"/>
+          <line x1="32" y1="8" x2="20" y2="20" stroke="#00e5cc" stroke-width="1.5"/>
+          <line x1="8" y1="32" x2="20" y2="20" stroke="#00e5cc" stroke-width="1.5"/>
+          <line x1="32" y1="32" x2="20" y2="20" stroke="#00e5cc" stroke-width="1.5"/>
+        </svg>
+      <div class="footer-brand-text">
+          <span class="footer-brand-name">Innovative</span>
+          <span class="footer-brand-sub">Tech Portfolio</span>
+        </div></div>
+        
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#contact">contact</a></li>
+      <li><a href="bibek CV.pdf">Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="dot blink"></span>
+        <span>Available for internships</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="line1">Bibek</span>
+        <span class="line2">Kumar<span class="accent">.</span></span>
+      </h1>
+      <div class="hero-sub">
+        <span class="type-text" id="typeText"></span><span class="type-cursor">|</span>
+      </div>
+      <p class="hero-desc">
+        First-year CS student building things that live on the internet.<br/>
+        Passionate about algorithms, systems & clean code.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch →</a>
+      </div>
+    </div>
+            <div class="hero-visual">
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring"></div>
+        <img class="hero-photo" src="PORTFOLIO.jpeg" alt="Bibek Kumar" />
+        <div class="hero-photo-badge">
+          <span class="dot blink"></span> Open to Intern
+        </div>
+      </div>
+      <div class="code-card" style="margin-top:1.5rem;">
+        <div class="code-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-filename">about_me.py</span>
+        </div>
+        <pre class="code-body"><code><span class="kw">class</span> <span class="cls">Developer</span>:
+    <span class="kw">def</span> <span class="fn">__init__</span>(self):
+        self.name    = <span class="str">"Bibek Kumar"</span>
+        self.year    = <span class="str">"1st Year CS"</span>
+        self.college = <span class="str">"LPU"</span>
+        self.loves   = [
+            <span class="str">"problem solving"</span>,
+            <span class="str">"open source"</span>,
+            <span class="str">"dark mode"</span>,
+        ]
+        self.coffee  = <span class="num">True</span>
+
+    <span class="kw">def</span> <span class="fn">say_hi</span>(self):
+        <span class="kw">return</span> <span class="str">"Let s build something!"</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">// 01 — about me</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Who I Am</h2>
+          <p>Hey! I'm Bibek, a first-year Computer Science student with a strong passion for software development, problem-solving, and building meaningful technology. I enjoy transforming ideas into real, functional software that can make tasks easier, solve problems, or create new experiences.</p>
+          <p>I’m constantly exploring different areas of tech, from web development and programming fundamentals to system design and emerging technologies. For me, coding is not just about writing syntax — it’s about creating solutions, thinking logically, and continuously learning.</p>
+          <p>When I’m not building projects, you’ll usually find me solving DSA (Data Structures & Algorithms) problems to sharpen my problem-solving skills, contributing to open-source projects, or reading about computer systems, operating systems, and how things work under the hood.</p>
+          <p>I’m always eager to learn, improve, and collaborate with others who share the same excitement for technology and innovation.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">200+</span>
+              <span class="stat-label">Problems Solved</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Languages Known</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-terminal">
+          <div class="terminal">
+            <div class="terminal-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="terminal-title">terminal</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">~$</span> whoami</p>
+              <p class="output">alex_chen — cs_student</p>
+              <p><span class="prompt">~$</span> cat interests.txt</p>
+              <p class="output">► Web Development</p>
+              <p class="output">► Data Structures & Algorithms</p>
+              <p class="output">► System Design</p>
+              <p class="output">► Machine Learning (learning...)</p>
+              <p><span class="prompt">~$</span> echo $STATUS</p>
+              <p class="output green-text">actively_learning ✓</p>
+              <p><span class="prompt">~$</span> <span class="blink-cursor">█</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label">// 02 — skills</div>
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <h3 class="cat-title"><span class="accent">&gt;</span> Languages</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">C / C++</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
+              <span class="skill-pct">65%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:55%"></div></div>
+              <span class="skill-pct">55%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="cat-title"><span class="accent">&gt;</span> Web</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">HTML / CSS</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">React</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:45%"></div></div>
+              <span class="skill-pct">45%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Node.js</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:40%"></div></div>
+              <span class="skill-pct">40%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="cat-title"><span class="accent">&gt;</span> Tools</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <span class="skill-name">Git / GitHub</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Linux / CLI</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">VS Code</span>
+              <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+              <span class="skill-pct">90%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="badges">
+        <span class="badge">Python</span>
+        <span class="badge">C++</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">React</span>
+        <span class="badge">HTML/CSS</span>
+        <span class="badge">Git</span>
+        <span class="badge">Linux</span>
+        <span class="badge">SQL</span>
+        <span class="badge">DSA</span>
+        <span class="badge">OOP</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">// 03 — projects</div>
+      <h2 class="section-title">What I've Built</h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-top">
+            <div class="project-icon">⌨</div>
+            <div class="project-links">
+              <a href="#" class="icon-link" title="GitHub">⎆ GitHub</a>
+              <a href="#" class="icon-link" title="Live">↗ Live</a>
+            </div>
+          </div>
+          <h3 class="project-title">Task Manager CLI</h3>
+          <p class="project-desc">A command-line task management app built with Python. Supports CRUD operations, priority tagging, and persistent JSON storage.</p>
+          <div class="project-tags">
+            <span>Python</span><span>CLI</span><span>JSON</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon">🌐</div>
+            <div class="project-links">
+              <a href="#" class="icon-link">⎆ GitHub</a>
+            </div>
+          </div>
+          <h3 class="project-title">Weather App</h3>
+          <p class="project-desc">A responsive weather dashboard using OpenWeather API. Displays real-time temperature, humidity & 5-day forecast.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon">🧮</div>
+            <div class="project-links">
+              <a href="#" class="icon-link">⎆ GitHub</a>
+            </div>
+          </div>
+          <h3 class="project-title">DSA Visualizer</h3>
+          <p class="project-desc">Interactive visualizer for common sorting algorithms (Bubble, Merge, Quick). Built to understand algorithm complexity visually.</p>
+          <div class="project-tags">
+            <span>JavaScript</span><span>Canvas</span><span>Algorithms</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon">📊</div>
+            <div class="project-links">
+              <a href="#" class="icon-link">⎆ GitHub</a>
+            </div>
+          </div>
+          <h3 class="project-title">Student Grade Tracker</h3>
+          <p class="project-desc">A C++ application to manage student records with file I/O, sorting by GPA, and grade reporting using OOP principles.</p>
+          <div class="project-tags">
+            <span>C++</span><span>PYTHON</span><span>File I/O</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-label">// 04 — education</div>
+      <h2 class="section-title">Academic Path</h2>
+      <div class="timeline">
+        <div class="timeline-item active">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2025 — Present</span>
+            <h3>B.Tech — Computer Science & Engineering</h3>
+            <p class="timeline-school">Lovely Professional University</p>
+            <p>Currently in 1st year. Studying fundamentals of CS: Data Structures, Digital Logic, Mathematics, Programming.</p>
+            <div class="timeline-tags">
+              <span>CGPA: 7.5/10</span>
+              <span>1st Year</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2022 — 2024</span>
+            <h3>Class XII — PCM + CS</h3>
+            <p class="timeline-school">ST Xavier's College, Ranchi</p>
+            <p>Scored 78% in boards. Computer Science was a core subject — fell in love with programming here.</p>
+            <div class="timeline-tags">
+              <span>78%</span>
+              <span>ICSE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label">// 05 — contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact-sub">Open to internships, collaborations, and hackathon teams. Drop a message!</p>
+      <div class="contact-grid">
+        <div class="contact-links">
+          <a href="mailto:alex@email.com" class="contact-item">
+            <span class="contact-icon">✉</span>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-val">bibekkumar7676@email.com</span>
+            </div>
+          </a>
+          <a href="#" class="contact-item">
+            <span class="contact-icon">⎆</span>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-val">https://github.com/BibeKoKumar</span>
+            </div>
+          </a>
+          <a href="#" class="contact-item">
+            <span class="contact-icon">in</span>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-val">https://www.linkedin.com/in/bibek-kumar-a6b11638a/</span>
+            </div>
+          </a>
+          <a href="#" class="contact-item">
+            <span class="contact-icon">𝕏</span>
+            <div>
+              <span class="contact-label">Twitter / X</span>
+              <span class="contact-val">@bibekkumar_dev</span>
+            </div>
+          </a>
+        </div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label>name_</label>
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label>email_</label>
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <label>message_</label>
+            <textarea rows="4" placeholder="Let's build something together..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <!-- Scrolling ticker -->
+    <div class="footer-ticker">
+      <div class="ticker-track">
+        <span>INNOVATION // PRECISION // DEVELOPMENT // BTECH CS &nbsp;&nbsp;&nbsp;</span>
+        <span>INNOVATION // PRECISION // DEVELOPMENT // BTECH CS &nbsp;&nbsp;&nbsp;</span>
+        <span>INNOVATION // PRECISION // DEVELOPMENT // BTECH CS &nbsp;&nbsp;&nbsp;</span>
+        <span>INNOVATION // PRECISION // DEVELOPMENT // BTECH CS &nbsp;&nbsp;&nbsp;</span>
+      </div>
+    </div>
+    <!-- Footer bottom bar -->
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <svg class="footer-brand-icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="8" cy="8" r="3" fill="#00e5cc"/>
+          <circle cx="32" cy="8" r="3" fill="#00e5cc"/>
+          <circle cx="8" cy="32" r="3" fill="#00e5cc"/>
+          <circle cx="32" cy="32" r="3" fill="#00e5cc"/>
+          <circle cx="20" cy="20" r="3" fill="#00e5cc"/>
+          <line x1="8" y1="8" x2="20" y2="20" stroke="#00e5cc" stroke-width="1.5"/>
+          <line x1="32" y1="8" x2="20" y2="20" stroke="#00e5cc" stroke-width="1.5"/>
+          <line x1="8" y1="32" x2="20" y2="20" stroke="#00e5cc" stroke-width="1.5"/>
+          <line x1="32" y1="32" x2="20" y2="20" stroke="#00e5cc" stroke-width="1.5"/>
+        </svg>
+        <div class="footer-brand-text">
+          <span class="footer-brand-name">Innovative</span>
+          <span class="footer-brand-sub">Tech Portfolio</span>
+        </div>
+      </div>
+      <span class="footer-copy">&#169; 2026 Innovative Tech Portfolio. All rights reserved.</span>
+      <div class="footer-socials">
+        <a href="https://facebook.com" class="social-btn facebook" title="Facebook" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="https://instagram.com" class="social-btn instagram" title="Instagram" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+        </a>
+        <a href="https://youtube.com" class="social-btn youtube" title="YouTube" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 001.94-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#0a0c10"/></svg>
+        </a>
+        <a href="https://x.com" class="social-btn x-twitter" title="X / Twitter" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/bibek-kumar-a6b11638a/" class="social-btn linkedin" title="LinkedIn" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://tiktok.com" class="social-btn tiktok" title="TikTok" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.17 8.17 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Custom cursor
+    const cursor = document.getElementById('cursor');
+    const trail = document.getElementById('cursorTrail');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+      setTimeout(() => {
+        trail.style.left = e.clientX + 'px';
+        trail.style.top = e.clientY + 'px';
+      }, 80);
+    });
+    document.querySelectorAll('a, button, .project-card').forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+    });
+
+    // Typewriter
+    const texts = ["CS Student.", "Problem Solver.", "Code Enthusiast.", "Future Developer."];
+    let ti = 0, ci = 0, deleting = false;
+    const el = document.getElementById('typeText');
+    function type() {
+      const cur = texts[ti];
+      if (!deleting) {
+        el.textContent = cur.slice(0, ++ci);
+        if (ci === cur.length) { deleting = true; setTimeout(type, 1400); return; }
+      } else {
+        el.textContent = cur.slice(0, --ci);
+        if (ci === 0) { deleting = false; ti = (ti + 1) % texts.length; }
+      }
+      setTimeout(type, deleting ? 50 : 90);
+    }
+    type();
+
+    // Scroll animations
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.section, .project-card, .skill-category, .timeline-item, .contact-item').forEach(el => observer.observe(el));
+
+    // Skill bar animate
+    const barObserver = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.querySelectorAll('.skill-fill').forEach(b => b.classList.add('animate'));
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('.skill-category').forEach(el => barObserver.observe(el));
+
+    // Nav scroll
+    window.addEventListener('scroll', () => {
+      document.querySelector('.nav').classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Form submit
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button');
+      btn.textContent = 'Message Sent! ✓';
+      btn.style.background = 'var(--green)';
+      setTimeout(() => { btn.textContent = 'Send Message →'; btn.style.background = ''; e.target.reset(); }, 3000);
+    }
+  </script>
+</body>
+</html>
